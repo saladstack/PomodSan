@@ -14,6 +14,9 @@
 		068EBFF7281A3EB9001033C0 /* PomodoroCoreData.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 068EBFF5281A3EB9001033C0 /* PomodoroCoreData.xcdatamodeld */; };
 		068EBFF9281A3EBA001033C0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 068EBFF8281A3EBA001033C0 /* Assets.xcassets */; };
 		068EBFFC281A3EBA001033C0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 068EBFFA281A3EBA001033C0 /* LaunchScreen.storyboard */; };
+		068EC00D281A40D8001033C0 /* ToDoListItem+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 068EC00B281A40D8001033C0 /* ToDoListItem+CoreDataClass.swift */; };
+		068EC00E281A40D8001033C0 /* ToDoListItem+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 068EC00C281A40D8001033C0 /* ToDoListItem+CoreDataProperties.swift */; };
+		068EC010281A4111001033C0 /* TaskViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 068EC00F281A4111001033C0 /* TaskViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +29,9 @@
 		068EBFF8281A3EBA001033C0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		068EBFFB281A3EBA001033C0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		068EBFFD281A3EBA001033C0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		068EC00B281A40D8001033C0 /* ToDoListItem+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "ToDoListItem+CoreDataClass.swift"; path = "PomodoroCoreData/ToDoListItem+CoreDataClass.swift"; sourceTree = "<group>"; };
+		068EC00C281A40D8001033C0 /* ToDoListItem+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "ToDoListItem+CoreDataProperties.swift"; path = "PomodoroCoreData/ToDoListItem+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		068EC00F281A4111001033C0 /* TaskViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -42,6 +48,8 @@
 		068EBFE0281A3EB9001033C0 = {
 			isa = PBXGroup;
 			children = (
+				068EC00B281A40D8001033C0 /* ToDoListItem+CoreDataClass.swift */,
+				068EC00C281A40D8001033C0 /* ToDoListItem+CoreDataProperties.swift */,
 				068EBFEB281A3EB9001033C0 /* PomodoroCoreData */,
 				068EBFEA281A3EB9001033C0 /* Products */,
 			);
@@ -61,6 +69,7 @@
 				068EBFEC281A3EB9001033C0 /* AppDelegate.swift */,
 				068EBFEE281A3EB9001033C0 /* SceneDelegate.swift */,
 				068EBFF0281A3EB9001033C0 /* ViewController.swift */,
+				068EC00F281A4111001033C0 /* TaskViewController.swift */,
 				068EBFF2281A3EB9001033C0 /* Main.storyboard */,
 				068EBFF8281A3EBA001033C0 /* Assets.xcassets */,
 				068EBFFA281A3EBA001033C0 /* LaunchScreen.storyboard */,
@@ -142,8 +151,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				068EBFF1281A3EB9001033C0 /* ViewController.swift in Sources */,
+				068EC010281A4111001033C0 /* TaskViewController.swift in Sources */,
 				068EBFED281A3EB9001033C0 /* AppDelegate.swift in Sources */,
 				068EBFEF281A3EB9001033C0 /* SceneDelegate.swift in Sources */,
+				068EC00D281A40D8001033C0 /* ToDoListItem+CoreDataClass.swift in Sources */,
+				068EC00E281A40D8001033C0 /* ToDoListItem+CoreDataProperties.swift in Sources */,
 				068EBFF7281A3EB9001033C0 /* PomodoroCoreData.xcdatamodeld in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -289,11 +301,13 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = N237VRLL4H;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = PomodoroCoreData/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = PomoSan;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -317,11 +331,13 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = N237VRLL4H;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = PomodoroCoreData/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = PomoSan;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
